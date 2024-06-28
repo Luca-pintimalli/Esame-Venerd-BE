@@ -1,0 +1,12 @@
+﻿@model SecondoEsameBE.Entities.Article
+
+@{
+    ViewData["Title"] = "Dettagli Articolo";
+}
+
+<div>
+    <h2>@Model.Name</h2>
+    <p><strong>Prezzo:</strong> €@Model.Price</p>
+    <p><strong>Descrizione:</strong> @Model.Description</p>
+    <img src="@Model.CoverImage" alt="Immagine dell'articolo" style="max-width: 300px; max-height: 300px;" />
+</div>
